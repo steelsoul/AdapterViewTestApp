@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">AdapterViewTestApp</string>
+    <string name="app_name">AdapterView тест</string>
+    <string name="list">Список</string>
+    <string name="add">Добавить</string>
+    <string name="remove">Удалить</string>
+    <string name="clear">Очистить</string>
 </resources>

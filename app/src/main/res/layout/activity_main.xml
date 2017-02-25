@@ -8,21 +8,20 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.apushkar.adapterviewtestapp.MainActivity"
+    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List"
-        android:id="@+id/textView"
+        android:text="@string/list"
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center_vertical|center_horizontal"/>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:background="#000000"
         android:padding="1dp"
         android:layout_weight="1">
@@ -31,7 +30,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/listView"
             android:headerDividersEnabled="false"
-            android:layout_weight="1"
             android:layout_gravity="center"
             android:background="@android:color/white"/>
     </FrameLayout>
@@ -39,21 +37,32 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" >
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add"
+            android:text="@string/add"
             android:id="@+id/add"
             android:layout_weight="1"
-            android:textSize="12dp"/>
+            android:textSize="12sp"
+            tools:ignore="ButtonStyle" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete"
+            android:text="@string/remove"
             android:id="@+id/delete"
             android:layout_weight="1"
-            android:textSize="12dp"/>
+            android:textSize="12sp"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
 </LinearLayout>
